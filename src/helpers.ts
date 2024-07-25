@@ -60,7 +60,7 @@ export const getGamesFromNextWeek = (games: Game[]) => {
 export const getGamesPossiblyOnLive = (games: Game[]) => {
     const today = new Date();
     const oneHourBefore = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() - 2, 0, 0);
-    const twoHourAfter = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() + 2, 59, 59);
+    const twoHourAfter = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() + 2, 0, 0);
 
     return games.filter(game => {
         const epochGameDate = game.date.valueOf()
