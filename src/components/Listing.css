@@ -22,7 +22,7 @@
 }
 
 .ListingItem > div:last-child {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     text-align: center;
     border-left: 1px solid #000;
 }
@@ -40,15 +40,53 @@
     margin: 0;
 }
 
+.ListingItemNotFound {
+    text-align: center;
+
+}
+
 .ListingItem.atletismo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/atletismo.svg);}
-.ListingItem.tiroaoarco {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_com_arco.svg);}
-.ListingItem.handebol {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/handebol.svg);}
-.ListingItem.futebol {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/futebol.svg);}
-.ListingItem.tiroesportivo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_esportivo.svg);}
-.ListingItem.volei {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/volei.svg);}
 .ListingItem.badminton {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/badminton.svg);}
+.ListingItem.basquete_3x3 {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/basquete_3x3.svg);}
 .ListingItem.basquete {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/basquete.svg);}
+.ListingItem.boxe {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/boxe.svg);}
+.ListingItem.breaking {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/breaking.svg);}
+.ListingItem.canoagemslalom {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/canoagem_slalom.svg);}
+.ListingItem.canoagemvelocidade {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/canoagem_velocidade.svg);}
+.ListingItem.ciclismobmxfreestyle {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ciclismo_bmx_freestyle.svg);}
+.ListingItem.ciclismobmxracing {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ciclismo_bmx_racing.svg);}
+.ListingItem.ciclismodepista {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ciclismo_de_pista.svg);}
+.ListingItem.ciclismomountainbike {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ciclismo_mountain_bike.svg);}
+.ListingItem.escaladaesportiva {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/escalada_esportiva.svg);}
+.ListingItem.esgrima {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/esgrima.svg);}
+.ListingItem.futebol {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/futebol.svg);}
+.ListingItem.ginasticaartistica {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ginastica_artistica.svg);}
+.ListingItem.ginasticadetrampolim {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ginastica_de_trampolim.svg);}
+.ListingItem.ginasticaritmica {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/ginastica_ritmica.svg);}
+.ListingItem.golf {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/golf.svg);}
+.ListingItem.hipismo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/hipismo.svg);}
+.ListingItem.hoqueisobregrama {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/hoquei_sobre_grama.svg);}
+.ListingItem.judo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/judo.svg);}
+.ListingItem.levantamentodepeso {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/levantamento_de_peso.svg);}
+.ListingItem.luta {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/luta.svg);}
+.ListingItem.maratonaaquatica {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/maratona_aquatica.svg);}
+.ListingItem.nadoartistico {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/nado_artistico.svg);}
+.ListingItem.natacao {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/natacao.svg);}
+.ListingItem.pentatlomoderno {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/pentatlo_moderno.svg);}
+.ListingItem.poloaquatico {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/polo_aquatico.svg);}
+.ListingItem.remo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/remo.svg);}
+.ListingItem.rugbysevens {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/rugby_sevens.svg);}
+.ListingItem.saltosornamentais {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/saltos_ornamentais.svg);}
+.ListingItem.skate {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/skate.svg);}
+.ListingItem.surf {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/surf.svg);}
+.ListingItem.taekwondo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/taekwondo.svg);}
 .ListingItem.tenisdemesa {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tenis_de_mesa.svg);}
+.ListingItem.tenis {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tenis.svg);}
+.ListingItem.tiroaoarco {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_com_arco.svg);}
+.ListingItem.tiroesportivo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_esportivo.svg);}
+.ListingItem.triatlo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/triatlo.svg);}
+.ListingItem.vela {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/vela.svg);}
+.ListingItem.volei {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/volei.svg);}
 .ListingItem.voleidepraia {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/volei_de_praia.svg);}
 
 .LiveCircleHolder {

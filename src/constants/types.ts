@@ -8,6 +8,10 @@ export enum Disciplines {
     Basquete = "Basquete",
     TenisDeMesa = "Tênis de Mesa",
     VoleiDePraia = "Vôlei de Praia",
+    Judo = "Judô",
+    Tenis = "Tênis",
+    Esgrima = "Esgrima",
+    CanoagemSlalom = "CanoagemSlalom",
 }
 
 export enum Nation {
@@ -17,6 +21,10 @@ export enum Nation {
     Tailandia = "Tailandia",
     França = "França",
     Marrocos = "Marrocos",
+    Japao = "Japão",
+    Ucrania = "Ucrânia",
+    China = "China",
+    Canada = "Canada"
 }
 
 export type Game = {
@@ -25,6 +33,7 @@ export type Game = {
     discipline: Disciplines;
     stage?: string;
     against?: Nation,
+    againstWho?: string,
     date: Date;
 }
 

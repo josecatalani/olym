@@ -45,7 +45,7 @@ const Item = ({ date, discipline, player, against, stage, isLiveGame}: Game & {i
 
 const Listing = () => {
     /* @ts-ignore */
-    const { state, setState } = useContext(AppContext);
+    const { state } = useContext(AppContext);
     return (
         <>
             <ul className='ListingList'>
@@ -58,7 +58,7 @@ const Listing = () => {
                 {
                     state.games.length > 0 
                         ? state.games.map((game: Game, idx: any) => <Item {...game}/>)
-                        : <div>Nenhum joguinho hoje :(</div>
+                        : <li className='ListingItemNotFound'><p>Nenhum joguinho.</p></li>
                 }
             </ul>
         </>
