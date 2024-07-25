@@ -145,7 +145,7 @@ export const games: Game[] = [{
     discipline: Disciplines.VoleiDePraia,
     stage: "Masculino - Fase preliminar - Grupo D",
     against: Nation.Marrocos,
-    date: new Date(2024, 6, 27, 14, 0, 0),
+    date: new Date(2024, 6, 27, 14, 1, 0),
 },
 ...July27Games
 ]
