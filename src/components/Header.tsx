@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import { Filters } from '../constants/types';
+import { AppContext, defaulState } from './App';
+import classNames from 'classnames';
 
 const FilterPills = () => {
-    console.log()
+    /* @ts-ignore */
+    const { state, setState } = useContext(AppContext);
+
+    const onClick = (key: string) => {
+        setState({
+            ...defaulState, 
+            activeFilters: {
+                ...defaulState.activeFilters,
+                [key]: state.activeFilters[key] === true ? false : true
+            }
+        })
+    }
+
     return (
         <div className="FilterPills" >
             <ul>
                 {
                     Object.entries(Filters).map(([name, key]) => 
-                        <li className='FilterLabel' attr-key={key}>{name}</li>
+                        <li
+                            className={classNames(['FilterLabel', state.activeFilters[key] ? 'active': null])}
+                            attr-key={key}
+                            onClick={() => onClick(key)}
+                        >
+                            {name}
+                        </li>
                     )
                 }
             </ul>
@@ -18,7 +38,13 @@ const FilterPills = () => {
 }
 
 const SearchBar = () => {
-    return <div><form><input type='search' placeholder="Vôlei..." /></form></div>
+    return (
+        <div>
+            <form>
+                <input type='search' placeholder="Vôlei..." />
+            </form>
+        </div>
+    )
 }
 
 const Header = () => {

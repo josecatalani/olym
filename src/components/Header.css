@@ -28,5 +28,7 @@
     background: #ffffff;
     border-radius: 1rem;
 }
-
-.FilterPills {}
+.FilterPills ul li.active {
+    background: #fafafa;
+    border: 1px solid black;
+}

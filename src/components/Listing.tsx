@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Listing.css';
 import { Game } from '../constants/types';
 import { games } from '../constants/games';
 import classNames from 'classnames';
+import { AppContext } from './App';
+import { JSX } from 'react/jsx-runtime';
 
-const Item = ({ date, discipline, player, against, stage}: Game) => {
-
+const Item = ({ date, discipline, player, against, stage, isLiveGame}: Game & {isLiveGame?: boolean}) => {
     const getDisciplineIdToMatchIcon = () => {
         const withoutAccents = discipline.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
         const withoutSpaces = withoutAccents.replace(/\s+/g, '');
@@ -28,8 +29,8 @@ const Item = ({ date, discipline, player, against, stage}: Game) => {
 
     return (
         <li className={classNames(['ListingItem', getDisciplineIdToMatchIcon()])} key={`listing-item-${date}-${discipline}`}>
-            <div>
-                <p><b>{discipline}</b></p>
+            <div>                
+                <p>{isLiveGame ? <div className='LiveCircleHolder'><div className='LiveCircle' /></div> : null} <b>{discipline}</b></p>
                 <p>{stage}</p>
                 <hr/>
                 {against ? <p>Brasil vs {against}</p> : <p>🇧🇷 - {player}</p>}
@@ -43,10 +44,24 @@ const Item = ({ date, discipline, player, against, stage}: Game) => {
 }
 
 const Listing = () => {
+    /* @ts-ignore */
+    const { state, setState } = useContext(AppContext);
     return (
-        <ul className='ListingList'>
-            {games.map((game, idx) => <Item {...game}/>)}
-        </ul>
+        <>
+            <ul className='ListingList'>
+                {
+                     state.liveGames.map((game: Game, idx: any) => <Item isLiveGame {...game}/>)
+                }
+            </ul>
+            <hr/>
+            <ul className='ListingList'>
+                {
+                    state.games.length > 0 
+                        ? state.games.map((game: Game, idx: any) => <Item {...game}/>)
+                        : <div>Nenhum joguinho hoje :(</div>
+                }
+            </ul>
+        </>
     )
 }
 
