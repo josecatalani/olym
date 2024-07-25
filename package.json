@@ -1,0 +1,7 @@
+{
+  "name": "olym",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/josecatalani/olym.git",
+  "license": "MIT"
+}
