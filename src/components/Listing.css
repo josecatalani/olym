@@ -1,0 +1,52 @@
+.ListingList {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.ListingItem {
+    list-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    background-repeat: no-repeat;    
+    background-size: contain;
+    background-position: center;
+}
+
+.ListingItem > div:first-child {
+    flex: 1 0 0;
+}
+
+.ListingItem > div:last-child {
+    padding: 1rem;
+    text-align: center;
+    border-left: 1px solid #000;
+}
+
+.ListingItem > div:last-child > p:first-child {
+    font-size: 0.9rem;
+}
+
+.ListingItem > div:last-child > p:last-child {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.ListingItem p{
+    margin: 0;
+}
+
+.ListingItem.atletismo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/atletismo.svg);}
+.ListingItem.tiroaoarco {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_com_arco.svg);}
+.ListingItem.handebol {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/handebol.svg);}
+.ListingItem.futebol {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/futebol.svg);}
+.ListingItem.tiroesportivo {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tiro_esportivo.svg);}
+.ListingItem.volei {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/volei.svg);}
+.ListingItem.badminton {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/badminton.svg);}
+.ListingItem.basquete {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/basquete.svg);}
+.ListingItem.tenisdemesa {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/tenis_de_mesa.svg);}
+.ListingItem.voleidepraia {background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../icons/volei_de_praia.svg);}
