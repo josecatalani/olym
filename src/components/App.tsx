@@ -27,7 +27,13 @@ export const AppContext = createContext({
 });
 
 function App() {
-  const [state, setState] = useState(defaulState)
+  const [state, setState] = useState({
+    ...defaulState,
+    activeFilters: {
+      ...defaulState.activeFilters,
+      "hoje": true
+    }
+  })
 
   const getGames = (games: Game[]) => {
     if (state.activeFilters["hoje"]) return getGamesFromToday(games);

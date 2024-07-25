@@ -59,11 +59,12 @@ export const getGamesFromNextWeek = (games: Game[]) => {
 
 export const getGamesPossiblyOnLive = (games: Game[]) => {
     const today = new Date();
-    const oneHourBefore = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() - 2, 0, 0);
-    const twoHourAfter = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() + 2, 0, 0);
-
+    
     return games.filter(game => {
-        const epochGameDate = game.date.valueOf()
-        return epochGameDate >= oneHourBefore.valueOf() && epochGameDate <= twoHourAfter.valueOf()
+        const gameDate = game.date;
+        const epochGameDate = gameDate.valueOf();
+        const oneHourBeforeNow = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours() - 1, 0, 0);
+        const thirtyMinutesFromNow = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes() + 30, 0);
+        return epochGameDate >= oneHourBeforeNow.valueOf() && epochGameDate <= thirtyMinutesFromNow.valueOf()
     });
 }

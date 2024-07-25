@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import './Listing.css';
 import { Game } from '../constants/types';
-import { games } from '../constants/games';
 import classNames from 'classnames';
 import { AppContext } from './App';
-import { JSX } from 'react/jsx-runtime';
 
 const Item = ({ date, discipline, player, against, stage, isLiveGame}: Game & {isLiveGame?: boolean}) => {
     const getDisciplineIdToMatchIcon = () => {
@@ -48,17 +46,24 @@ const Listing = () => {
     const { state } = useContext(AppContext);
     return (
         <>
-            <ul className='ListingList'>
-                {
-                     state.liveGames.map((game: Game, idx: any) => <Item isLiveGame {...game}/>)
-                }
-            </ul>
-            <hr/>
+            {
+                state.liveGames.length > 0 ?
+                (
+                    <>
+                    <ul className='ListingList'>
+                        {
+                            state.liveGames.map((game: Game, idx: any) => <Item isLiveGame {...game}/>)
+                        }
+                    </ul>
+                    <hr/>
+                    </>
+                ) : null 
+            }
             <ul className='ListingList'>
                 {
                     state.games.length > 0 
                         ? state.games.map((game: Game, idx: any) => <Item {...game}/>)
-                        : <li className='ListingItemNotFound'><p>Nenhum joguinho.</p></li>
+                        : <li className='ListingItemNotFound'><p>Nenhum resultado.</p></li>
                 }
             </ul>
         </>
