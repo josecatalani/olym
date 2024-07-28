@@ -96,6 +96,139 @@ const July27Games: Game[] = [{
     againstWho: "ABICHA/ELGRAOUI"
 }]
 
+const July28Games: Game[] = [
+    {
+        discipline: Disciplines.Handebol,
+        stage: "Feminino - Rodada Preliminar - Grupo B",
+        date: new Date(2024, 6, 28, 4, 0, 0),
+        against: Nation.Hungria
+    },
+    {
+        discipline: Disciplines.Tiro,
+        stage: "10m Air Rifle Feminino Qualificação",
+        date: new Date(2024, 6, 28, 4, 15, 0),
+        player: "Geovana MEYER"
+    },
+    {
+        discipline: Disciplines.Esgrima,
+        stage: "Florete Individual Feminino",
+        date: new Date(2024, 6, 28, 4, 30, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.TenisDeMesa,
+        stage: "Simples Feminino",
+        date: new Date(2024, 6, 28, 5, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Judo,
+        stage: "Champ-de-Mars Arena Mat 2",
+        date: new Date(2024, 6, 28, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Hipismo,
+        stage: "Eventing Team Cross Country",
+        date: new Date(2024, 6, 28, 5, 30, 0),
+        player: "Equipe do Brasil"
+    },
+    {
+        discipline: Disciplines.Hipismo,
+        stage: "Eventing Individual Cross Country",
+        date: new Date(2024, 6, 28, 5, 30, 0),
+        player: "Rafael MAMPRIN LOSANO, Carlos PARRO, Marcio CARVALHO JORGE"
+    },
+    {
+        discipline: Disciplines.VoleiDePraia,
+        stage: "Fase Preliminar - Pool E",
+        date: new Date(2024, 6, 28, 6, 0, 0),
+        player: "CAROL/BARBARA",
+        against: Nation.Japao
+    },
+    {
+        discipline: Disciplines.Skate,
+        stage: "Preliminares Feminino",
+        date: new Date(2024, 6, 28, 7, 0, 0),
+        player: "Rayssa LEAL, Pamela ROSA, Gabi MAZETTO"
+    },
+    {
+        discipline: Disciplines.Tenis,
+        stage: "Roland-Garros - Quadra 9",
+        date: new Date(2024, 6, 28, 7, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Tenis,
+        stage: "Roland-Garros - Quadra 7",
+        date: new Date(2024, 6, 28, 7, 0, 0),
+        player: "Beatriz HADDAD MAIA",
+        against: Nation.Franca
+    },
+    {
+        discipline: Disciplines.Tenis,
+        stage: "Roland-Garros - Quadra 11",
+        date: new Date(2024, 6, 28, 7, 0, 0),
+        player: "Laura PIGOSSI",
+        against: Nation.Ucrania
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Women's Skiff",
+        date: new Date(2024, 6, 28, 7, 35, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Men's Skiff",
+        date: new Date(2024, 6, 28, 8, 15, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Ciclismo,
+        stage: "Mountain Bike Feminino Cross-country",
+        date: new Date(2024, 6, 28, 9, 10, 0),
+        player: "Raiza GOUZAO HENRIQUE"
+    },
+    {
+        discipline: Disciplines.CanoagemSlalom,
+        stage: "Semifinal Individual Feminino",
+        date: new Date(2024, 6, 28, 10, 30, 0),
+        player: "Ana SATILA"
+    },
+    {
+        discipline: Disciplines.VoleiDePraia,
+        stage: "Fase Preliminar - Pool E",
+        date: new Date(2024, 6, 28, 15, 0, 0),
+        player: "EVANDRO/ARTHUR",
+        against: Nation.Austria
+    },
+    {
+        discipline: Disciplines.RugbySevens,
+        stage: "Pool C Feminino",
+        date: new Date(2024, 6, 28, 15, 0, 0),
+        against: Nation.EUA
+    },
+    {
+        discipline: Disciplines.TenisDeMesa,
+        stage: "Simples Masculino e Feminino",
+        date: new Date(2024, 6, 28, 15, 0, 0),
+        player: "Competidores a definir"
+    },
+    {
+        discipline: Disciplines.Surfe,
+        stage: "Rodada 2 Feminino",
+        date: new Date(2024, 6, 28, 14, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Surfe,
+        stage: "Rodada 2 Masculino",
+        date: new Date(2024, 6, 28, 18, 48, 0),
+        player: "Competidor a definir"
+    }
+];
+
 export const games: Game[] = [{
     discipline: Disciplines.TiroAoArco,
     stage: "Individual Feminino - Fase de Classificação",
