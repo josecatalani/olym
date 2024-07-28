@@ -497,5 +497,5 @@ export const games: Game[] = [{
 ...July27Games,
 ...July28Games,
 ...July29Games,
-...July30Games,
+...July30Games
 ]
