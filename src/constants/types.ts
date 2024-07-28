@@ -41,7 +41,7 @@ export enum Nation {
     Alemanha = "Alemanha",
     Lituania = "Lituânia",
     Cuba = "Cuba",
-    Kenya = "Kenya"
+    Kenia = "Kenya"
 }
 
 export type Game = {
