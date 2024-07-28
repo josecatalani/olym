@@ -229,6 +229,94 @@ const July28Games: Game[] = [
     }
 ];
 
+const July29Games: Game[] = [
+    {
+        discipline: Disciplines.Judo,
+        stage: "Champ-de-Mars Arena Mat 2",
+        date: new Date(2024, 6, 29, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Judo,
+        stage: "Champ-de-Mars Arena Mat 1",
+        date: new Date(2024, 6, 29, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Skate,
+        stage: "Preliminares Masculino",
+        date: new Date(2024, 6, 29, 7, 0, 0),
+        player: "Kelvin HOEFLER, Giovanni VIANNA, Felipe GUSTAVO"
+    },
+    {
+        discipline: Disciplines.TenisDeMesa,
+        stage: "Simples Masculino",
+        date: new Date(2024, 6, 29, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Men's Skiff",
+        date: new Date(2024, 6, 29, 7, 5, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Women's Skiff",
+        date: new Date(2024, 6, 29, 7, 15, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Men's Windsurfing",
+        date: new Date(2024, 6, 29, 7, 23, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Volei,
+        stage: "Fase Preliminar - Pool B",
+        date: new Date(2024, 6, 29, 8, 0, 0),
+        against: Nation.Kenia
+    },
+    {
+        discipline: Disciplines.Esgrima,
+        stage: "Florete Individual Masculino - Tabela de 32",
+        date: new Date(2024, 6, 29, 7, 5, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Ciclismo,
+        stage: "Mountain Bike Masculino Cross-country",
+        date: new Date(2024, 6, 29, 9, 10, 0),
+        player: "Ulan BASTOS GALINSKI"
+    },
+    {
+        discipline: Disciplines.Badminton,
+        stage: "Simples Feminino",
+        date: new Date(2024, 6, 29, 9, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.RugbySevens,
+        stage: "Pool C Feminino",
+        date: new Date(2024, 6, 29, 10, 0, 0),
+        against: Nation.Japao
+    },
+    {
+        discipline: Disciplines.Boxe,
+        stage: "Preliminares Feminino - 60kg - Oitavas de Final",
+        date: new Date(2024, 6, 29, 15, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Boxe,
+        stage: "Preliminares Masculino - +92kg - Oitavas de Final",
+        date: new Date(2024, 6, 29, 16, 20, 0),
+        player: "Competidor a definir"
+    }
+];
+
+
 export const games: Game[] = [{
     discipline: Disciplines.TiroAoArco,
     stage: "Individual Feminino - Fase de Classificação",
@@ -280,5 +368,7 @@ export const games: Game[] = [{
     against: Nation.Marrocos,
     date: new Date(2024, 6, 27, 14, 0, 0),
 },
-...July27Games
+...July27Games,
+...July28Games,
+...July29Games,
 ]
