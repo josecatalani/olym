@@ -11,12 +11,17 @@ export enum Disciplines {
     Judo = "Judô",
     Tenis = "Tênis",
     Esgrima = "Esgrima",
-    CanoagemSlalom = "CanoagemSlalom",
+    CanoagemSlalom = "Canoagem Slalom",
     Tiro = "Tiro",
     Skate = "Skate",
     Triatlo = "Triatlo",
     Hipismo = "Hipismo",
-    Arco = "Arco"
+    Ciclismo = "Ciclismo",
+    RugbySevens = "Rugby Sevens",
+    Surfe = "Surfe",
+    Arco = "Arco",
+    Vela = "Vela",
+    Boxe = "Boxe"
 }
 
 export enum Nation {
