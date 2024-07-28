@@ -163,7 +163,7 @@ const July28Games: Game[] = [
         stage: "Roland-Garros - Quadra 7",
         date: new Date(2024, 6, 28, 7, 0, 0),
         player: "Beatriz HADDAD MAIA",
-        against: Nation.Franca
+        against: Nation.França
     },
     {
         discipline: Disciplines.Tenis,
@@ -413,7 +413,7 @@ const July30Games: Game[] = [
         discipline: Disciplines.Handebol,
         stage: "Fase Preliminar Feminino - Grupo B",
         date: new Date(2024, 6, 30, 14, 0, 0),
-        against: Nation.Franca
+        against: Nation.França
     },
     {
         discipline: Disciplines.Boxe,
