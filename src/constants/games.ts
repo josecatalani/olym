@@ -316,6 +316,132 @@ const July29Games: Game[] = [
     }
 ];
 
+const July30Games: Game[] = [
+    {
+        discipline: Disciplines.Triatlo,
+        stage: "Individual Masculino",
+        date: new Date(2024, 6, 30, 3, 0, 0),
+        player: "Miguel HIDALGO, Manoel MESSIAS"
+    },
+    {
+        discipline: Disciplines.Judo,
+        stage: "Champ-de-Mars Arena Mat 1",
+        date: new Date(2024, 6, 30, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Judo,
+        stage: "Champ-de-Mars Arena Mat 2",
+        date: new Date(2024, 6, 30, 5, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Boxe,
+        stage: "Preliminares Masculino - 51kg - Oitavas de Final",
+        date: new Date(2024, 6, 30, 6, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.VoleiDePraia,
+        stage: "Fase Preliminar Masculino - Pool D",
+        date: new Date(2024, 6, 30, 7, 0, 0),
+        player: "GEORGE/ANDRE",
+        against: Nation.Cuba
+    },
+    {
+        discipline: Disciplines.Arco,
+        stage: "Individual Feminino",
+        date: new Date(2024, 6, 30, 7, 26, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Arco,
+        stage: "Individual Masculino",
+        date: new Date(2024, 6, 30, 7, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Men's Windsurfing",
+        date: new Date(2024, 6, 30, 9, 17, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Badminton,
+        stage: "Simples Masculino",
+        date: new Date(2024, 6, 30, 9, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.CanoagemSlalom,
+        stage: "Individual Feminino - 1ª e 2ª Descidas",
+        date: new Date(2024, 6, 30, 10, 0, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.Ciclismo,
+        stage: "BMX Freestyle Masculino - Qualificação",
+        date: new Date(2024, 6, 30, 10, 11, 0),
+        player: "Gustavo BATISTA de OLIVEIRA"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Women's Skiff",
+        date: new Date(2024, 6, 30, 10, 45, 0),
+        player: "Competidora a definir"
+    },
+    {
+        discipline: Disciplines.VoleiDePraia,
+        stage: "Fase Preliminar Feminino - Pool E",
+        date: new Date(2024, 6, 30, 11, 0, 0),
+        player: "CAROL/BARBARA",
+        against: Nation.Lituania
+    },
+    {
+        discipline: Disciplines.CanoagemSlalom,
+        stage: "Individual Masculino - 1ª e 2ª Descidas",
+        date: new Date(2024, 6, 30, 11, 0, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Vela,
+        stage: "Men's Skiff",
+        date: new Date(2024, 6, 30, 11, 35, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Handebol,
+        stage: "Fase Preliminar Feminino - Grupo B",
+        date: new Date(2024, 6, 30, 14, 0, 0),
+        against: Nation.Franca
+    },
+    {
+        discipline: Disciplines.Boxe,
+        stage: "Preliminares Masculino - 80kg - Oitavas de Final",
+        date: new Date(2024, 6, 30, 15, 32, 0),
+        player: "Competidor a definir"
+    },
+    {
+        discipline: Disciplines.Basquete,
+        stage: "Fase de Grupos Masculino - Grupo B",
+        date: new Date(2024, 6, 30, 16, 0, 0),
+        against: Nation.Alemanha
+    },
+    {
+        discipline: Disciplines.VoleiDePraia,
+        stage: "Fase Preliminar Feminino - Pool A",
+        date: new Date(2024, 6, 30, 16, 0, 0),
+        player: "ANA PATRICIA/DUDA",
+        against: Nation.Espanha
+    },
+    {
+        discipline: Disciplines.Boxe,
+        stage: "Preliminares Feminino - 54kg - Oitavas de Final",
+        date: new Date(2024, 6, 30, 16, 36, 0),
+        player: "Competidora a definir"
+    }
+];
+
 
 export const games: Game[] = [{
     discipline: Disciplines.TiroAoArco,
@@ -371,4 +497,5 @@ export const games: Game[] = [{
 ...July27Games,
 ...July28Games,
 ...July29Games,
+...July30Games,
 ]
