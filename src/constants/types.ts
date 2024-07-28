@@ -11,7 +11,17 @@ export enum Disciplines {
     Judo = "Judô",
     Tenis = "Tênis",
     Esgrima = "Esgrima",
-    CanoagemSlalom = "CanoagemSlalom",
+    CanoagemSlalom = "Canoagem Slalom",
+    Tiro = "Tiro",
+    Skate = "Skate",
+    Triatlo = "Triatlo",
+    Hipismo = "Hipismo",
+    Ciclismo = "Ciclismo",
+    RugbySevens = "Rugby Sevens",
+    Surfe = "Surfe",
+    Arco = "Arco",
+    Vela = "Vela",
+    Boxe = "Boxe"
 }
 
 export enum Nation {
@@ -24,7 +34,14 @@ export enum Nation {
     Japao = "Japão",
     Ucrania = "Ucrânia",
     China = "China",
-    Canada = "Canada"
+    Canada = "Canada",
+    Hungria = "Hungria",
+    EUA = "EUA",
+    Austria = "Áustria",
+    Alemanha = "Alemanha",
+    Lituania = "Lituânia",
+    Cuba = "Cuba",
+    Kenia = "Kenya"
 }
 
 export type Game = {
