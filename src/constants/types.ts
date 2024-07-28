@@ -14,7 +14,8 @@ export enum Disciplines {
     CanoagemSlalom = "CanoagemSlalom",
     Tiro = "Tiro",
     Skate = "Skate",
-    Triatlo = "Triatlo" 
+    Triatlo = "Triatlo",
+    Hipismo = "Hipismo"
 }
 
 export enum Nation {
